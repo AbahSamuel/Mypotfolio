@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bio Form</title>
+  <link rel="stylesheet" href="Form2.css">
+</head>
+
+<body>
+  <h1>Sabakor Form</h1>
+  <p>kindly fill in your information</p>
+  <div class="box">
+    <div class="name">
+  <input type="text" placeholder="SurName" class="SName" id="SName"><br><br>
+  <input type="text" placeholder="Other Names" class="Name" id="Name"><br><br>
+  </div>
+  <br><br>
+  
+  <div class="color-box">
+    Favourite Colour?<br>
+    <div class="color">
+    <input name="color" type="radio" value="blue">blue
+    <input name="color" type="radio" value="blue">red
+    <input name="color" type="radio" value="blue">green
+    <input name="color" type="radio" value="blue">yellow
+    <input name="color" type="radio" value="blue">purple
+    <input name="color" type="radio" value="blue">pink
+    </div>
+  </div>
+  <br><br>
+<div>
+  <input name="Country" list="african-countries" class="country" placeholder="Select Country" type="text">
+  <datalist id="african-countries">
+    <option value="Algeria">
+    <option value="Angola">
+    <option value="Benin">
+    <option value="Botswana">
+    <option value="Burkina Faso">
+    <option value="Burundi">
+    <option value="Cameroon">
+    <option value="Cape Verde">
+    <option value="Central African Republic">
+    <option value="Chad">
+    <option value="Comoros">
+    <option value="Côte d'Ivoire">
+    <option value="Democratic Republic of the Congo">
+    <option value="Djibouti">
+    <option value="Egypt">
+    <option value="Equatorial Guinea">
+    <option value="Eritrea">
+    <option value="Eswatini">
+    <option value="Ethiopia">
+    <option value="Gabon">
+    <option value="Gambia">
+    <option value="Ghana">
+    <option value="Guinea">
+    <option value="Guinea-Bissau">
+    <option value="Kenya">
+    <option value="Lesotho">
+    <option value="Liberia">
+    <option value="Libya">
+    <option value="Madagascar">
+    <option value="Malawi">
+    <option value="Mali">
+    <option value="Mauritania">
+    <option value="Mauritius">
+    <option value="Morocco">
+    <option value="Mozambique">
+    <option value="Namibia">
+    <option value="Niger">
+    <option value="Nigeria">
+    <option value="Republic of the Congo">
+    <option value="Rwanda">
+    <option value="São Tomé and Principe">
+    <option value="Senegal">
+    <option value="Seychelles">
+    <option value="Sierra Leone">
+    <option value="Somalia">
+    <option value="South Africa">
+    <option value="South Sudan">
+    <option value="Sudan">
+    <option value="Tanzania">
+    <option value="Togo">
+    <option value="Tunisia">
+    <option value="Uganda">
+    <option value="Zambia">
+    <option value="Zimbabwe">
+  </datalist>
+</div>
+
+
+  <br/><br/>
+  <input type="submit" value="submit" class="submit" onclick="document.getElementById("par").innerHtml=SName+Name+'You are welcome'">
+  <p id="par"></p>
+  </div>
+  
+  <script src="Form2.js"></script>
+</body>
+
+</html>
